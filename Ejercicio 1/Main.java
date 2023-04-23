@@ -17,8 +17,6 @@ public class Main {
 
         System.out.print("Por favor introduzca un regex válido para comparar el archivo a leer: ");
         final String regex = sc.nextLine();
-        //regex example: (\w+)\s(\w+)\.\s+DNI:\s?(\d{8})\.\s+Teléfono:\s?(\d{10})
-        //text example: "Nombre Apellido. DNI: 1234567890. Teléfono: 2611234567";
         final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
         Matcher matcher;
         int i = 0;
